@@ -4,12 +4,45 @@ body {
     font-family: Montserrat, Roboto, Arial, sans-serif;
 }
 
+/* Headings */
+
 h1 {
     margin: 0px;
     padding: 8px 0px 8px 0px;
     text-align: center;
     font-size: 72px;
     color: LightGray;
+}
+
+h2 {
+    margin: 0px;
+    padding: 8px 0px 8px 0px;
+    text-align: left;
+    font-size: 36px;
+    color: Black;
+}
+
+h4 {
+    margin: 0px;
+    padding: 8px 0px 8px 0px;
+    text-align: center;
+    font-size: 24px;
+    color: LightGray;
+}
+
+#pagetopview {
+    height: 90vh;
+    background-image: url("Media/background_image.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+#maintitle {
+    padding: 0px 0px 20vh 0px;
 }
 
 #navbar {
@@ -27,8 +60,12 @@ h1 {
   text-decoration: none;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 #mainBody {
-    background-image: url("Media/background_image.jpg");
-    background-position: center center;
-    background-size: cover;
+    background-color: #8798A2;
 }
