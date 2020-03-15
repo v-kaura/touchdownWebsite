@@ -2,6 +2,7 @@ body {
     margin: 0px;
     /*font-size: 24px;*/
     font-family: Montserrat, Roboto, Arial, sans-serif;
+    color: LightGray;
 }
 
 /* Headings */
@@ -16,15 +17,15 @@ h1 {
 
 h2 {
     margin: 0px;
-    padding: 8px 0px 8px 0px;
-    text-align: left;
+    padding: 40px 0px 0px 0px;
+    text-align: center;
     font-size: 36px;
-    color: Black;
+    color: LightGray;
 }
 
 h4 {
     margin: 0px;
-    padding: 8px 0px 8px 0px;
+    padding: 8px;
     text-align: center;
     font-size: 24px;
     color: LightGray;
@@ -32,7 +33,7 @@ h4 {
 
 #pagetopview {
     height: 90vh;
-    background-image: url("Media/background_image.jpg");
+    background-image: url("Media/wings.jpg");
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -42,7 +43,7 @@ h4 {
 }
 
 #maintitle {
-    padding: 0px 0px 20vh 0px;
+    padding: 0px 0px 5vh 0px;
 }
 
 #navbar {
@@ -56,8 +57,13 @@ h4 {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px;
+  padding: 10px 20px;
   text-decoration: none;
+}
+
+#navbar a:hover {
+  background-color: #f2f2f2;
+  color: #333;
 }
 
 .sticky {
@@ -67,5 +73,39 @@ h4 {
 }
 
 #mainBody {
-    background-color: #8798A2;
+    /*background-color: #566B73;*/
+    /*background-color: #A98E83;*/
+    background-color: #895640;
+}
+
+.contentbox {
+    margin: 40px;
+    padding: 40px;
+    font-size: 16px;
+    line-height: 2em;
+    
+    /* Black background colour*/
+    background-color: #1B1B1B;
+}
+
+.footer {
+    padding: 10px;
+    text-align: center;
+    
+    /* Black background colour*/
+    background-color: #333;
+}
+
+.footer a {
+    color: LightGray;
+}
+
+#footerTitle {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.footerContent {
+    display: inline;
+    padding: 10px;
 }
