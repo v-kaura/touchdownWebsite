@@ -31,6 +31,32 @@ h4 {
     color: LightGray;
 }
 
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: LightGray;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 #pagetopview {
     height: 90vh;
     background-image: url("Media/wings.jpg");
@@ -44,32 +70,6 @@ h4 {
 
 #maintitle {
     padding: 0px 0px 5vh 0px;
-}
-
-#navbar {
-  overflow: hidden;
-  background-color: #333;
-  position: sticky;
-}
-
-#navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-
-#navbar a:hover {
-  background-color: #f2f2f2;
-  color: #333;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
 
 #mainBody {
@@ -88,6 +88,10 @@ h4 {
     background-color: #1B1B1B;
 }
 
+.contentbox a {
+    color: #B9BDE4;
+}
+
 .footer {
     padding: 10px;
     text-align: center;
@@ -97,7 +101,7 @@ h4 {
 }
 
 .footer a {
-    color: LightGray;
+    color: #B9BDE4;
 }
 
 #footerTitle {
