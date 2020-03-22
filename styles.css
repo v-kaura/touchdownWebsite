@@ -116,9 +116,6 @@ h4 {
     border-bottom-style: solid;
     border-width: 1px;
     border-color: #E6E6E6;
-    
-    /* Black background colour*/
-    /*background-color: #005090;*/
 }
 
 .contentboxRight a {
@@ -128,9 +125,8 @@ h4 {
 .footer {
     padding: 20px;
     text-align: center;
-    
-    /* Black background colour*/
     background-color: #333333;
+    color: White;
 }
 
 .footer a {
@@ -140,9 +136,11 @@ h4 {
 #footerTitle {
     font-weight: bold;
     font-size: 20px;
+    color: White;
 }
 
 .footerContent {
     display: inline;
     padding: 20px;
+    color: White;
 }
