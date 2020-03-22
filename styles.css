@@ -2,7 +2,7 @@ body {
     margin: 0px;
     /*font-size: 24px;*/
     font-family: Montserrat, Roboto, Arial, sans-serif;
-    color: LightGray;
+    color: White;
 }
 
 /* Headings */
@@ -33,7 +33,7 @@ h4 {
 
 #navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #333333;
     position: sticky;
 }
 
@@ -47,8 +47,8 @@ h4 {
 }
 
 #navbar a:hover {
-    background-color: #f2f2f2;
-    color: #333;
+    background-color: #F2F2F2;
+    color: #333333;
 }
 
 .sticky {
@@ -72,23 +72,41 @@ h4 {
     padding: 0px 0px 5vh 0px;
 }
 
-#mainBody {
-    /*background-color: #566B73;*/
-    /*background-color: #A98E83;*/
-    background-color: #895640;
+.separationBanner {
+    padding: 5vh 0px;
+    background-color: #1B1B1B;
 }
 
-.contentbox {
-    margin: 80px;
+#mainBody {
+    background-color: #005090;
+    /*background-color: #CEEAFF;*/
+}
+
+.contentboxLeft {
+    margin: 80px 0px;
     padding: 40px 50% 40px 40px;
     font-size: 16px;
     line-height: 2em;
     
     /* Black background colour*/
-    background-color: #1B1B1B;
+    /*background-color: #005090;*/
 }
 
-.contentbox a {
+.contentboxLeft a {
+    color: #B9BDE4;
+}
+
+.contentboxRight {
+    margin: 80px 0px;
+    padding: 40px 40px 40px 50%;
+    font-size: 16px;
+    line-height: 2em;
+    
+    /* Black background colour*/
+    /*background-color: #005090;*/
+}
+
+.contentboxRight a {
     color: #B9BDE4;
 }
 
@@ -97,7 +115,7 @@ h4 {
     text-align: center;
     
     /* Black background colour*/
-    background-color: #333;
+    background-color: #333333;
 }
 
 .footer a {
