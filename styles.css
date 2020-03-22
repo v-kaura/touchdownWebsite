@@ -50,6 +50,7 @@ h4 {
     color: #333333;
     text-align: center;
     padding: 20px;
+    text-decoration: none;
 }
 
 #navbar a:hover {
