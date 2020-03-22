@@ -45,12 +45,11 @@ h4 {
 }
 
 #navbar a {
-    float: left;
+    float: right;
     display: block;
     color: #333333;
     text-align: center;
     padding: 20px;
-    text-decoration: none;
 }
 
 #navbar a:hover {
@@ -65,8 +64,7 @@ h4 {
 }
 
 #logo {
-    position: absolute;
-    right: 0px;
+    float: left;
     padding: 20px;
     color: #F2A55F;
     font-weight: bold;
