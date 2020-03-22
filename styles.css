@@ -1,18 +1,17 @@
 body {
     margin: 0px;
-    /*font-size: 24px;*/
     font-family: Montserrat, Roboto, Arial, sans-serif;
-    color: White;
+    color: #333333;
 }
 
 /* Headings */
 
 h1 {
     margin: 0px;
-    padding: 8px 0px 8px 0px;
+    padding: 8px 0px;
     text-align: center;
     font-size: 72px;
-    color: LightGray;
+    color: White;
 }
 
 h2 {
@@ -20,41 +19,57 @@ h2 {
     padding: 40px 0px 0px 0px;
     text-align: center;
     font-size: 36px;
-    color: LightGray;
+    color: #333333;
+}
+
+h3 {
+    color: #333333;
 }
 
 h4 {
     margin: 0px;
     padding: 8px;
     text-align: center;
-    font-size: 24px;
-    color: LightGray;
+    font-size: 32px;
+    color: White;
+    font-weight: 300;
 }
 
 #navbar {
     overflow: hidden;
-    background-color: #333333;
+    background-color: White;
     position: sticky;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: #E6E6E6;
 }
 
 #navbar a {
     float: left;
     display: block;
-    color: LightGray;
+    color: #333333;
     text-align: center;
     padding: 20px;
     text-decoration: none;
 }
 
 #navbar a:hover {
-    background-color: #F2F2F2;
-    color: #333333;
+    background-color: #F2A55F;
+    color: White;
 }
 
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
+}
+
+#logo {
+    position: absolute;
+    right: 0px;
+    padding: 20px;
+    color: #F2A55F;
+    font-weight: bold;
 }
 
 #pagetopview {
@@ -69,7 +84,7 @@ h4 {
 }
 
 #maintitle {
-    padding: 0px 0px 5vh 0px;
+    padding: 0px 0px 40vh 0px;
 }
 
 .separationBanner {
@@ -78,36 +93,36 @@ h4 {
 }
 
 #mainBody {
-    background-color: #005090;
-    /*background-color: #CEEAFF;*/
+    background-color: White;
 }
 
 .contentboxLeft {
-    margin: 80px 0px;
-    padding: 40px 50% 40px 40px;
+    padding: 160px 50% 160px 160px;
     font-size: 16px;
     line-height: 2em;
-    
-    /* Black background colour*/
-    /*background-color: #005090;*/
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: #E6E6E6;
 }
 
 .contentboxLeft a {
-    color: #B9BDE4;
+    color: #F2A55F;
 }
 
 .contentboxRight {
-    margin: 80px 0px;
-    padding: 40px 40px 40px 50%;
+    padding: 160px 160px 160px 50%;
     font-size: 16px;
     line-height: 2em;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: #E6E6E6;
     
     /* Black background colour*/
     /*background-color: #005090;*/
 }
 
 .contentboxRight a {
-    color: #B9BDE4;
+    color: #F2A55F;
 }
 
 .footer {
@@ -119,7 +134,7 @@ h4 {
 }
 
 .footer a {
-    color: #B9BDE4;
+    color: #F2A55F;
 }
 
 #footerTitle {
