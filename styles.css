@@ -45,7 +45,7 @@ h4 {
     border-color: #E6E6E6;
 }
 
-#navbar a {
+.navbarLink a {
     float: right;
     display: block;
     color: #4F4645;
@@ -54,7 +54,7 @@ h4 {
     text-decoration: none;
 }
 
-#navbar a:hover {
+.navbarLink a:hover {
     background-color: #F2A55F;
     color: White;
 }
@@ -70,6 +70,11 @@ h4 {
     padding: 20px;
     color: #F2A55F;
     font-weight: bold;
+}
+
+#logo a {
+    color: #F2A55F;
+    text-decoration: none;
 }
 
 #pagetopview {
