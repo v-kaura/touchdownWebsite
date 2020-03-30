@@ -59,9 +59,15 @@ h4 {
     color: White;
 }
 
-.sticky {
+.stickyTop {
     position: fixed;
     top: 0;
+    width: 100%;
+}
+
+.stickyBottom {
+    position: fixed;
+    bottom: 0;
     width: 100%;
 }
 
