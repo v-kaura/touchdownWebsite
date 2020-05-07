@@ -157,3 +157,56 @@ h4 {
     padding: 20px;
     color: White;
 }
+
+.smallInputText {
+    margin: 0px;
+    padding: 8px;
+    font-size: 16px;
+    line-height: 2em;
+    border: 2px solid #4F4645;
+    /*border: 2px solid #E6E6E6;*/
+    resize: none;
+    width: 80%;
+    overflow: none;
+    box-sizing: border-box;
+}
+
+.smallInputText:focus {
+    border-color: #F2A55F;
+}
+
+.largeInputText {
+    margin: 0px;
+    padding: 8px;
+    font-size: 16px;
+    line-height: 2em;
+    font-family: Montserrat, Roboto, Arial, sans-serif;
+    border: 2px solid #4F4645;
+    /*border: 2px solid #E6E6E6;*/
+    resize: none;
+    width: 80%;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.largeInputText:focus {
+    border-color: #F2A55F;
+}
+
+.submitButton {
+    margin: 0px;
+    padding: 8px;
+    font-size: 16px;
+    line-height: 2em;
+    border: 2px solid #4F4645;
+    background-color: #E6E6E6;
+}
+
+.submitButton:hover {
+    border-color: #F2A55F;
+    /*color: white;*/
+}
+
+.submitButton:active {
+    transform: translateY(4px);
+}
