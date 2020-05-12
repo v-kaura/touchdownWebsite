@@ -109,30 +109,44 @@ h4 {
     background-color: White;
 }
 
-.contentboxLeft {
-    padding: 80px 50% 80px 160px;
+.contentContainer {
     font-size: 16px;
     line-height: 2em;
     border-bottom-style: solid;
     border-width: 1px;
     border-color: #E6E6E6;
+}
+
+.contentRight { 
+    float: right;
+    display: block;
+    padding: 80px 5%;
+    width: 40%;
+}
+
+.contentLeft {
+    float: left;
+    display: block;
+    padding: 80px 5%;
+    width: 40%;
+}
+
+.contentboxLeft {
+    padding: 80px 55% 80px 5%;
 }
 
 .contentboxLeft a {
     color: #F2A55F;
+    text-decoration: none;
 }
 
 .contentboxRight {
-    padding: 80px 160px 80px 50%;
-    font-size: 16px;
-    line-height: 2em;
-    border-bottom-style: solid;
-    border-width: 1px;
-    border-color: #E6E6E6;
+    padding: 80px 5% 80px 55%;
 }
 
 .contentboxRight a {
     color: #F2A55F;
+    text-decoration: none;
 }
 
 .footer {
@@ -144,6 +158,7 @@ h4 {
 
 .footer a {
     color: #F2A55F;
+    text-decoration: none;
 }
 
 #footerTitle {
@@ -163,7 +178,8 @@ h4 {
     padding: 8px;
     font-size: 16px;
     line-height: 2em;
-    border: 2px solid #4F4645;
+    /*border: 2px solid #4F4645;*/
+    border: 1px solid #B39E9C;
     /*border: 2px solid #E6E6E6;*/
     resize: none;
     width: 80%;
@@ -172,7 +188,7 @@ h4 {
 }
 
 .smallInputText:focus {
-    border-color: #F2A55F;
+    border-color: #4F4645;
 }
 
 .largeInputText {
@@ -181,7 +197,8 @@ h4 {
     font-size: 16px;
     line-height: 2em;
     font-family: Montserrat, Roboto, Arial, sans-serif;
-    border: 2px solid #4F4645;
+    /*border: 2px solid #4F4645;*/
+    border: 1px solid #B39E9C;
     /*border: 2px solid #E6E6E6;*/
     resize: none;
     width: 80%;
@@ -190,21 +207,22 @@ h4 {
 }
 
 .largeInputText:focus {
-    border-color: #F2A55F;
+    border-color: #4F4645;
 }
 
 .submitButton {
     margin: 0px;
-    padding: 8px;
+    padding: 8px 16px;
     font-size: 16px;
     line-height: 2em;
-    border: 2px solid #4F4645;
-    background-color: #E6E6E6;
+    border: 2px solid #F2A55F;
+    background-color: white;
+    color: #F2A55F;
 }
 
 .submitButton:hover {
-    border-color: #F2A55F;
-    /*color: white;*/
+    background-color: #F2A55F;
+    color: white;
 }
 
 .submitButton:active {
