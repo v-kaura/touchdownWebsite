@@ -32,10 +32,7 @@
                             On our <a href="https://www.facebook.com/Touchdown-Aviation-104726744429801/">Facebook</a> page
                         </li>
                         <li>
-                            By phone on <a href="tel:+918928513993">+91 89285 13993</a>
-                        </li>
-                        <li>
-                            By WhatsApp on +91 89285 13993
+                            By phone or WhatsApp on <a href="tel:+918928513993">+91 89285 13993</a>
                         </li>
                         <li>
                             By email on <a href="mailto:touchdownaviation@outlook.com">touchdownaviation@outlook.com</a>
@@ -50,20 +47,36 @@
                 <p>
                     Or leave your details and we'll get back to you:
                 </p>
-                <form>
-                    <input type="text" placeholder="Enter Name" class="smallInputText" maxlength="50">
+                <form id="contactForm">
+                    <label for="userName">
+                        Name
+                    </label>
+                    <br>
+                    <input type="text" placeholder="Rajat Kaura" class="smallInputText" id="userName" name="userName" maxlength="50">
                     <br>
                     <br>
-                    <input type="text" placeholder="enter_your@email.id" class="smallInputText" maxlength="50">
+                    <label for="userEmail">
+                        Email
+                    </label>
+                    <br>
+                    <input type="text" placeholder="touchdownaviation@outlook.com" class="smallInputText" id="userEmail" name="userEmail" maxlength="50">
                     <br>
                     <br>
-                    <input type="text" placeholder="+ 91 phone num" class="smallInputText">
+                    <label for="userPhone">
+                        Phone
+                    </label>
+                    <br>
+                    <input type="text" placeholder="+91 89285 13993" class="smallInputText" id="userPhone" name="userPhone">
                     <br>
                     <br>
-                    <textarea type="text" placeholder="Message" rows="4" class="largeInputText"></textarea>
+                    <label for="userMessage">
+                        Message
+                    </label>
+                    <br>
+                    <textarea type="text" placeholder="Message" rows="4" class="largeInputText" id="userMessage" name="userMessage"></textarea>
                     <br>
                     <br>
-                    <button type="button" class="submitButton">
+                    <button type="submit" class="submitButton">
                         Submit
                     </button>
                 </form>
@@ -94,5 +107,6 @@
 
     </div>
     <script src="home.js"></script>
+    <script src="comms.js"></script>
 </body>
 </html>
