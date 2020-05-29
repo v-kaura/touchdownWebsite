@@ -144,10 +144,6 @@ h4 {
     padding: 80px 5% 80px 55%;
 }
 
-.contentboxMiddle {
-    padding: 80px 5%;
-}
-
 .contentImageLeft {
     float: left;
     max-width: 45%;
@@ -250,4 +246,20 @@ h4 {
 
 .submitButton:active {
     transform: translateY(4px);
+}
+
+@media only screen and (max-width: 768px) {
+    .contentboxLeft {
+        padding: 80px 5%;
+    }
+
+    .contentboxRight {
+        padding: 80px 5%;
+    }
+
+    .footerContent {
+        display: block;
+        padding: 10px;
+        color: White;
+    }
 }
