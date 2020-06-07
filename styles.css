@@ -115,6 +115,8 @@ h4 {
     border-bottom-style: solid;
     border-width: 1px;
     border-color: #E6E6E6;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .contentContainer a {
@@ -250,16 +252,24 @@ h4 {
 
 @media only screen and (max-width: 768px) {
     .contentboxLeft {
-        padding: 80px 5%;
+        padding: 80px 10%;
     }
 
     .contentboxRight {
-        padding: 80px 5%;
+        padding: 80px 10%;
     }
 
     .footerContent {
         display: block;
         padding: 10px;
+        color: White;
+    }
+
+    h1 {
+        margin: 0px;
+        padding: 8px 0px;
+        text-align: center;
+        font-size: 48px;
         color: White;
     }
 }
