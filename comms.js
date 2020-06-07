@@ -1,8 +1,17 @@
+function sanitizeInput(inputText) {
+    return inputText.replace(excludedChars, "_");
+}
+
 function submitForm(event) {
     var nameValue = document.getElementById("userName").value;
     var emailValue = document.getElementById("userEmail").value;
     var phoneValue = document.getElementById("userPhone").value;
     var messageValue = document.getElementById("userMessage").value;
+
+    nameValue = sanitizeInput(nameValue);
+    emailValue = sanitizeInput(emailValue);
+    phoneValue = sanitizeInput(phoneValue);
+    messageValue = sanitizeInput(messageValue);
 
     if (nameValue.length < 1) {
         nameValue = "NoNameProvided"
@@ -30,7 +39,6 @@ function submitForm(event) {
     var requestBodyString = JSON.stringify(requestBody);
 
     var xhr = new XMLHttpRequest();
-    xhr.addEventListener("load", logText);
     xhr.open();
 
     xhr.send(requestBodyString);
@@ -40,3 +48,6 @@ function submitForm(event) {
 
 var userForm = document.getElementById("contactForm");
 userForm.addEventListener("submit", submitForm);
+
+//const excludedChars = /[^A-Za-z0-9 @\-_.,()+]/g;
+const excludedChars = /[<>'"?]/g;
