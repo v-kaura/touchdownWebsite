@@ -41,6 +41,25 @@ function submitForm(event) {
     var xhr = new XMLHttpRequest();
     xhr.open();
 
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState = XMLHttpRequest.DONE) {
+            var status = xhr.status;
+            var formFeedbackMessage = formSuccessfulSubmission;
+
+            if ((status >= 200) && (status < 400)) {
+                document.getElementById("userName").value = "";
+                document.getElementById("userEmail").value = "";
+                document.getElementById("userPhone").value = "";
+                document.getElementById("userMessage").value = "";
+            }
+            else {
+                formFeedbackMessage = formFailedSubmission;
+            }
+
+            document.getElementById("formSubmissionFeedback").innerText = formFeedbackMessage;
+        }
+    }
+
     xhr.send(requestBodyString);
 
     event.preventDefault();
@@ -51,3 +70,6 @@ userForm.addEventListener("submit", submitForm);
 
 //const excludedChars = /[^A-Za-z0-9 @\-_.,()+]/g;
 const excludedChars = /[<>'"?]/g;
+
+const formSuccessfulSubmission = "The form has been submitted successfully!";
+const formFailedSubmission = "There was an error in submitting the form, please try again later.";
