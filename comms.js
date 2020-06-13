@@ -3,6 +3,8 @@ function sanitizeInput(inputText) {
 }
 
 function submitForm(event) {
+    event.preventDefault();
+
     var nameValue = document.getElementById("userName").value;
     var emailValue = document.getElementById("userEmail").value;
     var phoneValue = document.getElementById("userPhone").value;
@@ -42,7 +44,7 @@ function submitForm(event) {
     xhr.open();
 
     xhr.onreadystatechange = function() {
-        if (xhr.readyState = XMLHttpRequest.DONE) {
+        if (xhr.readyState == XMLHttpRequest.DONE) {
             var status = xhr.status;
             var formFeedbackMessage = formSuccessfulSubmission;
 
@@ -56,13 +58,12 @@ function submitForm(event) {
                 formFeedbackMessage = formFailedSubmission;
             }
 
-            document.getElementById("formSubmissionFeedback").innerText = formFeedbackMessage;
+            //document.getElementById("formSubmissionFeedback").innerText = formFeedbackMessage;
+            alert(formFeedbackMessage);
         }
     }
 
     xhr.send(requestBodyString);
-
-    event.preventDefault();
 }
 
 var userForm = document.getElementById("contactForm");
