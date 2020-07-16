@@ -24,8 +24,8 @@
 
         <div class="separationBanner"></div>
 
-        <div class="contentContainer">
-            <div class="contentboxLeft">
+        <div class="contentContainerFlexWhite">
+            <div class="contentText">
                 <p>
                     Here at Touchdown Aviation, we pride ourselves in providing a tailored experience unique to each student. To find out more, reach out to us:
                     <ul>
@@ -43,8 +43,8 @@
             </div>
         </div>
 
-        <div class="contentContainer">
-            <div class="contentboxRight">
+        <div class="contentContainerFlexGray">
+            <div class="contentText">
                 <p>
                     Or leave your details and we'll get back to you:
                 </p>
@@ -53,28 +53,28 @@
                         Name*
                     </label>
                     <br>
-                    <input type="text" placeholder="Rajat Kaura" class="smallInputText" id="userName" name="userName" maxlength="50" required>
+                    <input type="text" placeholder="Enter your name" class="smallInputText" id="userName" name="userName" maxlength="50" required>
                     <br>
                     <br>
                     <label for="userEmail">
                         Email*
                     </label>
                     <br>
-                    <input type="text" placeholder="touchdownaviation@outlook.com" class="smallInputText" id="userEmail" name="userEmail" maxlength="50" required>
+                    <input type="text" placeholder="Enter your email" class="smallInputText" id="userEmail" name="userEmail" maxlength="50" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required>
                     <br>
                     <br>
                     <label for="userPhone">
                         Phone
                     </label>
                     <br>
-                    <input type="text" placeholder="+91 89285 13993" class="smallInputText" id="userPhone" name="userPhone">
+                    <input type="text" placeholder="Enter your phone number" class="smallInputText" id="userPhone" name="userPhone">
                     <br>
                     <br>
                     <label for="userMessage">
                         Message
                     </label>
                     <br>
-                    <textarea type="text" placeholder="Message" rows="4" class="largeInputText" id="userMessage" name="userMessage"></textarea>
+                    <textarea type="text" placeholder="Enter your message" rows="4" class="largeInputText" id="userMessage" name="userMessage"></textarea>
                     <br>
                     <br>
                     <button type="submit" class="submitButton">

@@ -109,65 +109,115 @@ h4 {
     background-color: White;
 }
 
-.contentContainer {
+.contentContainerWhite {
     font-size: 16px;
     line-height: 2em;
-    border-bottom-style: solid;
-    border-width: 1px;
-    border-color: #E6E6E6;
-    text-align: justify;
-    text-justify: inter-word;
+    padding: 80px 0px;
+    /*text-align: justify;
+    text-justify: inter-word;*/
 }
 
-.contentContainer a {
+.contentContainerWhite a {
     color: #F2A55F;
     text-decoration: none;
 }
 
-.contentRight { 
+.contentContainerGray {
+    font-size: 16px;
+    line-height: 2em;
+    background-color: #F6F6F6;
+    padding: 80px 0px;
+    /*text-align: justify;
+    text-justify: inter-word;*/
+}
+
+.contentContainerGray a {
+    color: #F2A55F;
+    text-decoration: none;
+}
+
+.contentContainerFlexWhite {
+    font-size: 16px;
+    line-height: 2em;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 80px 0px;
+}
+
+.contentContainerFlexWhite a {
+    color: #F2A55F;
+    text-decoration: none;
+}
+
+.contentContainerFlexGray {
+    font-size: 16px;
+    line-height: 2em;
+    display: flex;
+    flex-direction: row;
+    background-color: #F6F6F6;
+    align-items: center;
+    padding: 80px 0px;
+}
+
+.contentContainerFlexGray a {
+    color: #F2A55F;
+    text-decoration: none;
+}
+
+/*.contentRight { 
     float: right;
     display: block;
-    padding: 80px 5%;
+    padding: 80px 30%;
     width: 40%;
 }
 
 .contentLeft {
     float: left;
     display: block;
-    padding: 80px 5%;
+    padding: 80px 30%;
     width: 40%;
-}
+}*/
 
-.contentboxLeft {
-    padding: 80px 55% 80px 5%;
+/*.contentboxLeft {
+    padding: 80px 30%;
 }
 
 .contentboxRight {
-    padding: 80px 5% 80px 55%;
+    padding: 80px 30%;
+    background-color: #F6F6F6;
+}*/
+
+.contentText {
+    padding: 0px 30%;
 }
 
-.contentImageLeft {
-    /*float: left;*/
-    max-width: 30%;
-    /*max-height: 400px;*/
+.contentTextFlexLeft {
+    padding: 0px 10% 0px 15%;
+    /*width: 40%;*/
+}
+
+.contentTextFlexRight {
+    padding: 0px 15% 0px 10%;
+    /*width: 40%;*/
+}
+
+.contentImageFlexLeft {
+    max-width: 20%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 8px;
-    display: inline-block;
-    padding: 80px 0px;
-}
-
-.contentImageRight {
-    float: right;
-    max-width: 50%;
-    /*max-height: 400px;*/
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 8px;
     display: block;
-    padding: 80px 0px;
+    padding: 0px 0px 0px 15%;
+}
+
+.contentImageFlexRight {
+    max-width: 20%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 0px 15% 0px 0px;
 }
 
 .footer {
@@ -203,8 +253,8 @@ h4 {
     border: 1px solid #B39E9C;
     /*border: 2px solid #E6E6E6;*/
     resize: none;
-    width: 80%;
-    overflow: none;
+    width: 100%;
+    overflow: hidden;
     box-sizing: border-box;
 }
 
@@ -222,7 +272,7 @@ h4 {
     border: 1px solid #B39E9C;
     /*border: 2px solid #E6E6E6;*/
     resize: none;
-    width: 80%;
+    width: 100%;
     box-sizing: border-box;
     overflow: auto;
 }
@@ -254,13 +304,41 @@ h4 {
     display: none;
 }
 
+.imageClassRight {
+    width: 50%;
+    float: right;
+    margin: 0px 10%;
+}
+
 @media only screen and (max-width: 768px) {
-    .contentboxLeft {
-        padding: 80px 10%;
+    .contentContainerFlexWhite {
+        flex-direction: column;
     }
 
-    .contentboxRight {
-        padding: 80px 10%;
+    .contentContainerFlexGray {
+        flex-direction: column;
+    }
+
+    .contentText {
+        padding: 0px 10%;
+    }
+
+    .contentTextFlexLeft {
+        padding: 0px 10%;
+    }
+
+    .contentTextFlexRight {
+        padding: 0px 10%;
+    }
+
+    .contentImageFlexLeft {
+        padding: 0px 10%;
+        max-width: 80%;
+    }
+
+    .contentImageFlexRight {
+        padding: 0px 10%;
+        max-width: 80%;
     }
 
     .footerContent {
@@ -276,11 +354,37 @@ h4 {
         font-size: 48px;
         color: White;
     }
+}
 
-    .imageClass {
-        display: block;
-        padding: 0px 10% 80px 10%;
-        max-width: 80%;
-        height: auto;
+@media only screen and (max-width: 1600px) and (min-width: 769px) {
+    .contentText {
+        padding: 0px 20%;
+    }
+    .contentboxLeft {
+        padding: 80px 20%;
+    }
+
+    .contentboxRight {
+        padding: 80px 20%;
+    }
+
+    .contentTextFlexLeft {
+        padding: 0px 5% 0px 10%;
+        /*width: 55%;*/
+    }
+
+    .contentTextFlexRight {
+        padding: 0px 10% 0px 5%;
+        /*width: 55%;*/
+    }
+
+    .contentImageFlexLeft {
+        max-width: 20%;
+        padding: 0px 0px 0px 10%;
+    }
+
+    .contentImageFlexRight {
+        max-width: 20%;
+        padding: 0px 10% 0px 0px;
     }
 }
