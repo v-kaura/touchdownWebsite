@@ -190,34 +190,39 @@ h4 {
 
 .contentText {
     padding: 0px 30%;
+    min-width:30%;
 }
 
 .contentTextFlexLeft {
     padding: 0px 10% 0px 15%;
+    min-width:30%;
     /*width: 40%;*/
 }
 
 .contentTextFlexRight {
     padding: 0px 15% 0px 10%;
+    min-width:30%;
     /*width: 40%;*/
 }
 
 .contentImageFlexLeft {
-    max-width: 20%;
+    /*max-width: 20%;*/
     height: auto;
     margin-left: auto;
     margin-right: auto;
     display: block;
     padding: 0px 0px 0px 15%;
+    min-width: 400px;
 }
 
 .contentImageFlexRight {
-    max-width: 20%;
+    /*max-width: 20%;*/
     height: auto;
     margin-left: auto;
     margin-right: auto;
     display: block;
     padding: 0px 15% 0px 0px;
+    min-width: 400px;
 }
 
 .footer {
