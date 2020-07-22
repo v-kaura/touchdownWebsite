@@ -339,11 +339,13 @@ h4 {
     .contentImageFlexLeft {
         padding: 0px 10%;
         max-width: 80%;
+        min-width: 50%;
     }
 
     .contentImageFlexRight {
         padding: 0px 10%;
         max-width: 80%;
+        min-width: 50%;
     }
 
     .footerContent {
