@@ -1,3 +1,15 @@
+// Constants
+const defaultNameValue = "NoNameProvided"
+const defaultEmailValue = "NoEmailProvided"
+const defaultPhoneValue = "NoPhoneProvided"
+const defaultMessageValue = "NoMessageProvided"
+
+const excludedChars = /[<>'"?]/g;
+
+const formSuccessfulSubmission = "The form has been submitted successfully!";
+const formFailedSubmission = "There was an error in submitting the form, please try again later.";
+
+//Functions
 function sanitizeInput(inputText) {
     return inputText.replace(excludedChars, "_");
 }
@@ -16,19 +28,19 @@ function submitForm(event) {
     messageValue = sanitizeInput(messageValue);
 
     if (nameValue.length < 1) {
-        nameValue = "NoNameProvided"
+        nameValue = defaultNameValue
     }
 
     if (emailValue.length < 1) {
-        emailValue = "NoEmailProvided"
+        emailValue = defaultEmailValue
     }
 
     if (phoneValue.length < 1) {
-        phoneValue = "NoPhoneProvided"
+        phoneValue = defaultPhoneValue
     }
 
     if (messageValue.length < 1) {
-        messageValue = "NoMessageProvided"
+        messageValue = defaultMessageValue
     }
 
     var requestBody = {
@@ -58,7 +70,6 @@ function submitForm(event) {
                 formFeedbackMessage = formFailedSubmission;
             }
 
-            //document.getElementById("formSubmissionFeedback").innerText = formFeedbackMessage;
             alert(formFeedbackMessage);
         }
     }
@@ -68,9 +79,3 @@ function submitForm(event) {
 
 var userForm = document.getElementById("contactForm");
 userForm.addEventListener("submit", submitForm);
-
-//const excludedChars = /[^A-Za-z0-9 @\-_.,()+]/g;
-const excludedChars = /[<>'"?]/g;
-
-const formSuccessfulSubmission = "The form has been submitted successfully!";
-const formFailedSubmission = "There was an error in submitting the form, please try again later.";
